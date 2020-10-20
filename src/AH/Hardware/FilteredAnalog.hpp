@@ -268,6 +268,15 @@ class FilteredAnalog
     /**
      * @brief   Construct a new FilteredAnalog object.
      *
+     * **This constructor should not be used.**
+     * It is just a way to easily create arrays of FilteredAnalog object,
+     * and initializing them later.
+     */
+    FilteredAnalog() : FilteredAnalog(NO_PIN) {}
+
+    /**
+     * @brief   Construct a new FilteredAnalog object.
+     *
      * @param   analogPin
      *          The analog pin to read from.
      * @param   initial 
